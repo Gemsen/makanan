@@ -12,7 +12,7 @@ $headers[] = 'X-Location: -6,117412,106,153527';
 
 echo "\n";
 echo "\e[96mGeMseN Script Gofood \n";
-echo "\e[96mKLAIM FOOD \n";
+echo "\e[96mKLAIM VC FOOD \n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -225,12 +225,12 @@ echo "\e[96mKLAIM FOOD \n";
          }
          }else{
          echo color("red","-] Nomor sudah teregistrasi \n");
-        echo color("green","馃摱鈻讹笍 Kode verifikasi sudah di kirim")."\n";
+        echo color("green","Kode verifikasi sudah di kirim")."\n";
         
          //echo"\n鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆\n\n";
         // echo color("purple","!] Silahkan registrasi kembali\n");
-//echo "\n".color("nevy","馃敀鈻讹笍 Claim Reff: ");
-        //echo "\n".color("yellow","鈴斥柖锔� Please wait");
+//echo "\n".color("nevy","Claim Reff: ");
+        //echo "\n".color("yellow","� Please wait");
        /* for($a=1;$a<=5;$a++){
           echo color("yellow",$a);
           sleep(1);}
@@ -239,13 +239,13 @@ echo "\e[96mKLAIM FOOD \n";
 $login = curl('https://api.gojekapi.com/v3/customers/login_with_phone', '{"phone":"+' . $hp . '"}', $headers);
 		$logins = json_decode($login[0]);
 		if($logins->success == true) {
-			echo color("purple","馃挰鈻讹笍 Otp : ");
+			echo color("purple","OTP : ");
 			$otp = trim(fgets(STDIN));
 			$data1 = '{"scopes":"gojek:customer:transaction gojek:customer:readonly","grant_type":"password","login_token":"' . $logins->data->login_token . '","otp":"' . $otp . '","client_id":"gojek:cons:android","client_secret":"' . $secret . '"}';
 			$verif = curl('https://api.gojekapi.com/v3/customers/token', $data1, $headers);
 			$verifs = json_decode($verif[0]);
 			
-/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
         $message = fetch_value($code1,'"message":"','"');
         */
 			

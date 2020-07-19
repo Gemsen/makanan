@@ -276,8 +276,8 @@ echo "\n".color("nevy","Claim Voucher 1: ");
           echo color("yellow",$a);
           sleep(1);}
 				
-			//	$data = '{"promo_code":"STAYGOFOOD201105A"}';
-		$data = '{"promo_code":"GOFOOD022620A"}';
+			//	$data = '{"promo_code":"COBAGOFOOD0607"}';
+		$data = '{"promo_code":"COBAGOFOOD0607"}';
         $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){

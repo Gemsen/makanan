@@ -56,15 +56,15 @@ echo "\e[96mKLAIM VC FOOD \n";
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        sleep(25);
-        echo color("nevy","\nOPERATOR NEMBE GOLEKKE SENG PAS");
+        sleep(5);
+        echo color("nevy","\nAUTO CLAIM VC GOFOOD");
         echo "\n".color("nevy","Claim Voucher 20+10: ");
         //echo "\n".color("yellow","Please wait  ");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
-          sleep(1);}
+          sleep(5);}
         
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
@@ -76,9 +76,9 @@ echo "\e[96mKLAIM VC FOOD \n";
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
-          sleep(1);}
+          sleep(5);}
           
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0607"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","Message: ".$message);}
@@ -90,9 +90,9 @@ echo "\e[96mKLAIM VC FOOD \n";
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
-          sleep(1);}
+          sleep(5);}
           
-        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
+        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
        // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -245,7 +245,7 @@ $login = curl('https://api.gojekapi.com/v3/customers/login_with_phone', '{"phone
 			$verif = curl('https://api.gojekapi.com/v3/customers/token', $data1, $headers);
 			$verifs = json_decode($verif[0]);
 			
-/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD0607"}');
+/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         */
 			
@@ -276,7 +276,7 @@ echo "\n".color("nevy","Claim Voucher 1: ");
           echo color("yellow",$a);
           sleep(1);}
 				
-			//	$data = '{"promo_code":"COBAGOFOOD0607"}';
+			//	$data = '{"promo_code":"COBAGOFOOD2107"}';
 		$data = '{"promo_code":"COBAGOFOOD0607"}';
         $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
         $message = fetch_value($claim,'"message":"','"');

@@ -57,9 +57,9 @@ echo "\e[96mKLAIM VC FOOD \n";
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(5);
-        echo color("nevy","\nAUTO CLAIM VC GOFOOD");
+        echo color("green","\nAUTO CLAIM VC GOFOOD");
 	echo "\n";
-        echo "\n".color("nevy","Klaim FOOD A");
+        echo "\n".color("nevy","Klaim FOOD A ");
         //echo "\n".color("yellow","Please wait  ");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
@@ -73,7 +73,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         else{
           echo "\n".color("red","Message: ".$message);}
 	     
-        echo "\n".color("nevy","Klaim FOOD B");
+        echo "\n".color("nevy","Klaim FOOD B ");
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
@@ -87,7 +87,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           echo "\n".color("red","Message: ".$message);}
        
   
-        echo "\n".color("nevy","Klaim FOOD C");
+        echo "\n".color("nevy","Klaim FOOD C ");
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
@@ -145,19 +145,19 @@ echo "\e[96mKLAIM VC FOOD \n";
         $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
         echo "\n".color("purple","Total voucher ".$total." : ");
-        echo "\n".color("nevy","                     1. ".$voucher1);
-        echo "\n".color("nevy","                     2. ".$voucher2);
-        echo "\n".color("nevy","                     3. ".$voucher3);
-        echo "\n".color("nevy","                     4. ".$voucher4);
-        echo "\n".color("nevy","                     5. ".$voucher5);
-        echo "\n".color("nevy","                     6. ".$voucher6);
-        echo "\n".color("nevy","                     7. ".$voucher7);
-        echo "\n".color("nevy","                     8. ".$voucher8);
-        echo "\n".color("nevy","                     9. ".$voucher9);
-        echo "\n".color("nevy","                     10. ".$voucher10);
-      	echo "\n".color("nevy","                     11. ".$voucher11);
-        echo "\n".color("nevy","                     12. ".$voucher12);
-        echo "\n".color("nevy","                     13. ".$voucher13);
+        echo "\n".color("nevy","1. ".$voucher1);
+        echo "\n".color("nevy","2. ".$voucher2);
+        echo "\n".color("nevy","3. ".$voucher3);
+        echo "\n".color("nevy","4. ".$voucher4);
+        echo "\n".color("nevy","5. ".$voucher5);
+        echo "\n".color("nevy","6. ".$voucher6);
+        echo "\n".color("nevy","7. ".$voucher7);
+        echo "\n".color("nevy","8. ".$voucher8);
+        echo "\n".color("nevy","9. ".$voucher9);
+        echo "\n".color("nevy","10. ".$voucher10);
+      	echo "\n".color("nevy","11. ".$voucher11);
+        echo "\n".color("nevy","12. ".$voucher12);
+        echo "\n".color("nevy","13. ".$voucher13);
         echo"\n";
         $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
         $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');

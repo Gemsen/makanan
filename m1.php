@@ -86,7 +86,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         else{
           echo "\n".color("red","Message: ".$message);}
           
-        echo "\n".color("nevy","Klaim FOOD B1 ");
+        echo "\n".color("nevy","Klaim FOOD C ");
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
@@ -100,7 +100,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           echo "\n".color("red","Message: ".$message);}
        
   
-        echo "\n".color("nevy","Klaim FOOD C ");
+        echo "\n".color("nevy","Klaim FOOD D ");
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
@@ -157,7 +157,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
         $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
-        echo "\n".color("purple","Total voucher ".$total." : ");
+        echo "\n".color("purple","Total vouchers ".$total." : ");
         echo "\n".color("nevy","1. ".$voucher1);
         echo "\n".color("nevy","2. ".$voucher2);
         echo "\n".color("nevy","3. ".$voucher3);

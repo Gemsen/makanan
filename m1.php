@@ -94,7 +94,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           
         $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.)){
+        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){
           echo "\n".color("green","Message: ".$message);}
         else{
           echo "\n".color("red","Message: ".$message);}
@@ -109,7 +109,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
        // echo "\n".$code1;
-        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.)){
+        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){
           echo "\n".color("green","Message: ".$message);}
         else{
           echo "\n".color("red","Message: ".$message);}

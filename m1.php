@@ -65,7 +65,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           echo color("yellow",$a);
           sleep(5);}
         
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD2107"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){

@@ -68,7 +68,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"GOJEKAMAN"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
-        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","Message: ".$message);}
         else{
           echo "\n".color("red","Message: ".$message);}
@@ -81,7 +81,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           
         $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","Message: ".$message);}
         else{
           echo "\n".color("red","Message: ".$message);}
@@ -94,7 +94,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           
         $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","Message: ".$message);}
         else{
           echo "\n".color("red","Message: ".$message);}
@@ -109,7 +109,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
        // echo "\n".$code1;
-        if(strpos($code1, 'Hore klaim vouchernya sudah berhasil ya.')){
+        if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","Message: ".$message);}
         else{
           echo "\n".color("red","Message: ".$message);}
@@ -259,7 +259,7 @@ $login = curl('https://api.gojekapi.com/v3/customers/login_with_phone', '{"phone
 			$verif = curl('https://api.gojekapi.com/v3/customers/token', $data1, $headers);
 			$verifs = json_decode($verif[0]);
 			
-/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+/*$code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"STAYGOFOOD201105SCE"}');
         $message = fetch_value($code1,'"message":"','"');
         */
 			
@@ -290,8 +290,8 @@ echo "\n".color("nevy","Claim Voucher 1: ");
           echo color("yellow",$a);
           sleep(1);}
 				
-			//	$data = '{"promo_code":"COBAGOFOOD2107"}';
-		$data = '{"promo_code":"COBAGOFOOD2107"}';
+			//	$data = '{"promo_code":"STAYGOFOOD201105SCE"}';
+		$data = '{"promo_code":"STAYGOFOOD201105SCE"}';
         $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){

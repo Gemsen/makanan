@@ -45,7 +45,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $otptoken = getStr('"otp_token":"','"',$register);
         echo color("green","Kode verifikasi sudah di kirim")."\n";
         otp:
-        echo color("purple","Masukan Otpmu : ");
+        echo color("purple","Masukan Otpmu  : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"ff27aceb-07b2-4bf2-935f-71674a5df465"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
@@ -106,7 +106,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           echo color("yellow",$a);
           sleep(10);}
           
-        $code1 = request6('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
        // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -216,10 +216,10 @@ echo "\e[96mKLAIM VC FOOD \n";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy"," IKI PIN MU = ****** ")."\n";
+         echo color("nevy"," INI PIN GOPAY = 112233 ")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin: ";
+         echo "Otp pin  : ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;

@@ -57,68 +57,70 @@ echo "\e[96mKLAIM VC FOOD \n";
         echo color("nevy","+]Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(5);
+	echo color("green","\n====================");
         echo color("green","\nAUTO CLAIM VC GOFOOD");
-	      echo "\n";
+	echo color("green","\n====================");	
+	echo "\n";
         echo "\n".color("nevy","Klaim FOOD A ");
         //echo "\n".color("yellow","Please wait  ");
-        for($a=0;$a<=5;$a++){
-          echo color("yellow",$a);
-          sleep(15);}
+        for($a=1;$a<=3;$a++){
+        echo color("nevy",".");
+        sleep(15);}
         
         $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-          echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","Message: ".$message);}
         else{
-          echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","Message: ".$message);}
 	     
         echo "\n".color("nevy","Klaim FOOD B ");
         //echo "\n".color("yellow","Please wait");
-        for($a=0;$a<=5;$a++){
-          echo color("yellow",$a);
-          sleep(10);}
+        for($a=1;$a<=3;$a++){
+        echo color("nevy",".");
+        sleep(10);}
           
         $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-          echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","Message: ".$message);}
         else{
-          echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","Message: ".$message);}
           
         echo "\n".color("nevy","Klaim FOOD C ");
         //echo "\n".color("yellow","Please wait");
-        for($a=0;$a<=5;$a++){
-          echo color("yellow",$a);
-          sleep(5);}
+        for($a=1;$a<=3;$a++){
+        echo color("nevy",".");
+        sleep(5);}
           
         $code1 = request7('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-          echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","Message: ".$message);}
         else{
-          echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","Message: ".$message);}
        
   
         echo "\n".color("nevy","Klaim FOOD D ");
         //echo "\n".color("yellow","Please wait");
-        for($a=0;$a<=5;$a++){
-          echo color("yellow",$a);
-          sleep(5);}
+        for($a=1;$a<=3;$a++){
+        echo color("nevy",".");
+        sleep(5);}
           
         $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-       // echo "\n".$code1;
+        // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-          echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","Message: ".$message);}
         else{
-          echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","Message: ".$message);}
         
         echo "\n".color("nevy","Klaim Reff ");
         //echo "\n".color("yellow","Please wait");
-        for($a=0;$a<=5;$a++){
-          echo color("yellow",$a);
-          sleep(1);}
+        for($a=1;$a<=3;$a++){
+        echo color("nevy",".");
+        sleep(1);}
           
           
         $data = '{"referral_code":"G-QQ4CZTZ"}';

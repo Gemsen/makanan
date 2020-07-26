@@ -57,10 +57,11 @@ echo "\e[96mKLAIM VC FOOD \n";
         echo color("nevy","+]Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(5);
-	echo color("green","\n=================================");
-        echo color("green","\n      AUTO CLAIM VC GOFOOD");
-	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
-	echo color("green","\n=================================");	
+	echo color("green","\n================================");
+        echo color("green","\n     AUTO CLAIM VC GOFOOD");
+	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]').");
+	echo color("green","\n=================================
+	");	
 	echo "\n";
         echo "\n".color("nevy","+]Klaim FOOD A");
         //echo "\n".color("yellow","Please wait  ");

@@ -59,7 +59,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         sleep(5);
 	echo color("green","\n================================");
         echo color("green","\n     AUTO CLAIM VC GOFOOD");
-	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]').")\n";
+	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");
 	echo color("green","\n=================================
 	");	
 	echo "\n";

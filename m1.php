@@ -55,8 +55,7 @@ echo "\n";
 	echo color("green","\n================================");
         echo color("green","\n     AUTO CLAIM VC GOFOOD");
 	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
-	echo color("green","\n=================================
-	");	
+	echo color("green","\n================================");	
 	echo "\n";
         echo "\n".color("nevy","+]Klaim FOOD A");
         //echo "\n".color("yellow","Please wait  ");
@@ -230,7 +229,7 @@ echo "\n";
         // tutup sini
          }else{
          echo color("red","-] Otp yang anda input salah");
-         echo"\n鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆\n\n";
+         //echo"\n鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆\n\n";
          echo color("purple","!] Silahkan input kembali\n");
          goto otp;
          }

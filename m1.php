@@ -7,12 +7,7 @@ $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.27.0';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -8.67117611,115.21381181';
-
-
-
 echo "\n";
-echo "\e[96mGeMseN Script Gofood \n";
-echo "\e[96mKLAIM VC FOOD \n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
@@ -59,7 +54,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         sleep(5);
 	echo color("green","\n================================");
         echo color("green","\n     AUTO CLAIM VC GOFOOD");
-	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");
+	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
 	echo color("green","\n=================================
 	");	
 	echo "\n";

@@ -51,10 +51,10 @@ echo "\e[96mKLAIM VC FOOD \n";
         $verif = request("/v5/customers/phone/verify", null, $data1);
     
         if(strpos($verif, '"access_token"')){
-        echo color("green","Berhasil mendaftar\n");
+        echo color("green","✔️▶️Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("nevy","✔️▶️Your access token : ".$token."\n\n");
+        echo color("nevy","+]Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(5);
         echo color("green","\nAUTO CLAIM VC GOFOOD");
@@ -212,11 +212,11 @@ echo "\e[96mKLAIM VC FOOD \n";
                                         $debug['respon'] = json_decode($datas, true);
      */
          setpin:
-         echo "\n".color("purple","SET PIN SEKALIAN BIAR AMAN !!!: y/n ");
+         echo "\n".color("purple","SET PIN SEKALIAN BIAR AMAN (Y/N)!!!! ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy"," INI PIN GOPAY = 112233 ")."\n";
+         echo color("nevy","INI PIN GOPAY ENTE = 112233 ")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin  : ";

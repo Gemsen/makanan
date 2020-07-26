@@ -61,7 +61,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         echo color("green","\nAUTO CLAIM VC GOFOOD");
 	echo color("green","\n====================");	
 	echo "\n";
-        echo "\n".color("nevy","Klaim FOOD A ");
+        echo "\n".color("nevy","+]Klaim FOOD A");
         //echo "\n".color("yellow","Please wait  ");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -71,11 +71,11 @@ echo "\e[96mKLAIM VC FOOD \n";
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","+]Message: ".$message);}
         else{
-        echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","!]Message: ".$message);}
 	     
-        echo "\n".color("nevy","Klaim FOOD B ");
+        echo "\n".color("nevy","+]Klaim FOOD B");
         //echo "\n".color("yellow","Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -84,11 +84,11 @@ echo "\e[96mKLAIM VC FOOD \n";
         $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","+]Message: ".$message);}
         else{
-        echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","!]Message: ".$message);}
           
-        echo "\n".color("nevy","Klaim FOOD C ");
+        echo "\n".color("nevy","+]Klaim FOOD C");
         //echo "\n".color("yellow","Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -97,12 +97,11 @@ echo "\e[96mKLAIM VC FOOD \n";
         $code1 = request7('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","+]Message: ".$message);}
         else{
-        echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","!]Message: ".$message);}
        
-  
-        echo "\n".color("nevy","Klaim FOOD D ");
+        echo "\n".color("nevy","+]Klaim FOOD D");
         //echo "\n".color("yellow","Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -112,25 +111,24 @@ echo "\e[96mKLAIM VC FOOD \n";
         $message = fetch_value($code1,'"message":"','"');
         // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","Message: ".$message);}
+        echo "\n".color("green","+]Message: ".$message);}
         else{
-        echo "\n".color("red","Message: ".$message);}
+        echo "\n".color("red","!]Message: ".$message);}
         
-        echo "\n".color("nevy","Klaim Reff ");
+        echo "\n".color("nevy","Klaim Reff");
         //echo "\n".color("yellow","Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(1);}
           
-          
         $data = '{"referral_code":"G-QQ4CZTZ"}';
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
-       // echo "\n".$claim;
+        // echo "\n".$claim;
         if(strpos($claim, 'Kode referralnya berhasil ditukerin')){
-          echo "\n".color("green","+] Message: ".$message);
+        echo "\n".color("green","+]Message: ".$message);
         }else{
-          echo "\n".color("red","-] Message: ".$message);
+        echo "\n".color("red","!]Message: ".$message);
         }
         
         echo "\n \n";
@@ -187,7 +185,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
         $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
         $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
- /*       $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
+ /*     $TOKEN  = "1032900146:AAE7V93cvCvw1DNuTk0Hp1ZFywJGmjiP7aQ";
       	$chatid = "";//"785784404";
       	$pesan 	= "";//"[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
       	$method	= "sendMessage";
@@ -214,14 +212,14 @@ echo "\e[96mKLAIM VC FOOD \n";
                                         $debug['respon'] = json_decode($datas, true);
      */
          setpin:
-         echo "\n".color("purple","SET PIN SEKALIAN BIAR AMAN (Y/N)!!!! ");
+         echo "\n".color("red","-]SET PIN SEKALIAN BIAR AMAN (Y/N)!!! ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","INI PIN GOPAY ENTE = 112233 ")."\n";
+         echo color("nevy","-]INI PIN GOPAY ENTE = 112233 ")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin  : ";
+         echo "-]OTP PIN  : ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
@@ -241,11 +239,11 @@ echo "\e[96mKLAIM VC FOOD \n";
          }
          }else{
          echo color("red","-] Nomor sudah teregistrasi \n");
-        echo color("green","Kode verifikasi sudah di kirim")."\n";
+         echo color("green","Kode verifikasi sudah di kirim")."\n";
         
-         //echo"\n鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆\n\n";
+        //echo"\n鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆鈻柆\n\n";
         // echo color("purple","!] Silahkan registrasi kembali\n");
-//echo "\n".color("nevy","Claim Reff: ");
+        //echo "\n".color("nevy","Claim Reff: ");
         //echo "\n".color("yellow","� Please wait");
        /* for($a=1;$a<=5;$a++){
           echo color("yellow",$a);

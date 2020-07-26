@@ -90,7 +90,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
-          sleep(10);}
+          sleep(5);}
           
         $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -104,7 +104,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);
-          sleep(10);}
+          sleep(5);}
           
         $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
@@ -114,7 +114,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         else{
           echo "\n".color("red","Message: ".$message);}
         
-        echo "\n".color("nevy","Claim Reff: ");
+        echo "\n".color("nevy","Klaim Reff ");
         //echo "\n".color("yellow","Please wait");
         for($a=0;$a<=5;$a++){
           echo color("yellow",$a);

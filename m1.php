@@ -45,7 +45,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         $otptoken = getStr('"otp_token":"','"',$register);
         echo color("green","📶▶️Kode verifikasi sudah di kirim")."\n";
         otp:
-        echo color("yellow","💬▶️KODE OTP      : ");
+        echo color("yellow","💬▶️KODE OTP     : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"ff27aceb-07b2-4bf2-935f-71674a5df465"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);

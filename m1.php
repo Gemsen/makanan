@@ -16,7 +16,7 @@ echo "\e[96mKLAIM VC FOOD \n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("purple","Berapa Nomormu : ");
+        echo color("purple","📲▶️NOMER HP ELO : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -43,9 +43,9 @@ echo "\e[96mKLAIM VC FOOD \n";
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("green","Kode verifikasi sudah di kirim")."\n";
+        echo color("green","📶▶️Kode verifikasi sudah di kirim")."\n";
         otp:
-        echo color("purple","Masukan Otpmu  : ");
+        echo color("yellow","💬▶️KODE OTP      : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"ff27aceb-07b2-4bf2-935f-71674a5df465"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
@@ -54,7 +54,7 @@ echo "\e[96mKLAIM VC FOOD \n";
         echo color("green","Berhasil mendaftar\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("nevy","+] Your access token : ".$token."\n\n");
+        echo color("nevy","✔️▶️Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(5);
         echo color("green","\nAUTO CLAIM VC GOFOOD");
@@ -92,7 +92,7 @@ echo "\e[96mKLAIM VC FOOD \n";
           echo color("yellow",$a);
           sleep(5);}
           
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request7('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
           echo "\n".color("green","Message: ".$message);}

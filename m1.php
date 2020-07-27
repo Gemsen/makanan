@@ -63,7 +63,7 @@ echo "\n";
         echo color("nevy",".");
         sleep(15);}
         
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -77,7 +77,7 @@ echo "\n";
         echo color("nevy",".");
         sleep(10);}
           
-        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+]Message: ".$message);}

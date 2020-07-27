@@ -77,7 +77,7 @@ echo "\n";
         echo color("nevy",".");
         sleep(10);}
           
-        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+]Message: ".$message);}
@@ -90,7 +90,7 @@ echo "\n";
         echo color("nevy",".");
         sleep(5);}
           
-        $code1 = request4('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
+        $code1 = request3('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+]Message: ".$message);}
@@ -103,7 +103,7 @@ echo "\n";
         echo color("nevy",".");
         sleep(5);}
           
-        $code1 = request1('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2107"}');
+        $code1 = request4('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
@@ -212,7 +212,7 @@ echo "\n";
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","-]INI PIN GOPAY ENTE = 112233 ")."\n";
+         echo color("nevy","-]INI PIN GOPAY ENTE *112233* ")."\n";
          $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "-]OTP PIN  : ";

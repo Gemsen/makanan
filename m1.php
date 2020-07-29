@@ -65,7 +65,6 @@ echo "\n";
         
         $code4 = request4('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
-        //echo ("\n".$code1);
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
         echo "\n".color("green","+]Message: ".$message);}
         else{

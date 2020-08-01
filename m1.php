@@ -17,7 +17,7 @@ echo color("red","\n   ┃┃╭━┫╭━━┫┃┃┃┃┣━━╮┃╭
 echo color("blue","\n   ┃╰┻━┃╰━━┫┃┃┃┃┃╰━╯┃╰━━┫┃╱┃┃┃ "); 
 echo color("red","\n   ╰━━━┻━━━┻╯╰╯╰┻━━━┻━━━┻╯╱╰━╯ "); 
 echo color("yellow","\n      AUTO CLAIM VoC GOFOOD ");
-echo color("yellow","\n  Time: ".date('[d-m-Y] [H:i:s]')."\n");	
+echo color("yellow","\n  Time: ".date('[d-m-Y] [H:i:s]').");	
 echo color("green","\n=================================");	
 echo "\n";
         $nama = nama();

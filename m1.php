@@ -66,9 +66,9 @@ echo "\n";
         $code1 = request4('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+]Message: ".$message);}
+        echo "\n".color("green","🔓▶️Message: ".$message);}
         else{
-        echo "\n".color("red","!]Message: ".$message);}
+        echo "\n".color("red","🔐▶️Message: ".$message);}
 	     
         echo "\n".color("nevy","+]Klaim FOOD B");
         //echo "\n".color("yellow","Please wait");
@@ -79,9 +79,9 @@ echo "\n";
         $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"MAUGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+]Message: ".$message);}
+        echo "\n".color("green","🔓▶️Message: ".$message);}
         else{
-        echo "\n".color("red","!]Message: ".$message);}
+        echo "\n".color("red","🔐▶️Message: ".$message);}
           
         echo "\n".color("nevy","+]Klaim FOOD C");
         //echo "\n".color("yellow","Please wait");
@@ -92,9 +92,9 @@ echo "\n";
         $code1 = request4('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+]Message: ".$message);}
+        echo "\n".color("green","🔓▶️Message: ".$message);}
         else{
-        echo "\n".color("red","!]Message: ".$message);}
+        echo "\n".color("red","🔐▶️Message: ".$message);}
        
         echo "\n".color("nevy","+]Klaim FOOD D");
         //echo "\n".color("yellow","Please wait");
@@ -106,9 +106,9 @@ echo "\n";
         $message = fetch_value($code1,'"message":"','"');
         // echo "\n".$code1;
         if(strpos($code1, 'Promo kamu sudah bisa dipakai.')){
-        echo "\n".color("green","+]Message: ".$message);}
+        echo "\n".color("green","🔓▶️Message: ".$message);}
         else{
-        echo "\n".color("red","!]Message: ".$message);}
+        echo "\n".color("red","🔐▶️Message: ".$message);}
         
         echo "\n".color("nevy","Klaim Reff");
         //echo "\n".color("yellow","Please wait");
@@ -121,9 +121,9 @@ echo "\n";
         $message = fetch_value($claim,'"message":"','"');
         // echo "\n".$claim;
         if(strpos($claim, 'Kode referralnya berhasil ditukerin')){
-        echo "\n".color("green","+]Message: ".$message);
+        echo "\n".color("green","🔓▶️Message: ".$message);
         }else{
-        echo "\n".color("red","!]Message: ".$message);
+        echo "\n".color("red","🔐▶️Message: ".$message);
         }
         
         echo "\n \n";
@@ -275,9 +275,9 @@ echo "\n".color("nevy","Claim Reff 1: ");
         $claim = request("/customer_referrals/v1/campaign/enrolment", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
-          echo "\n".color("green","+] Message: ".$message);
+          echo "\n".color("green","🔓▶️Message: ".$message);
         }else{
-          echo "\n".color("red","-] Message: ".$message);
+          echo "\n".color("red","🔐▶️Message: ".$message);
         }
         
 echo "\n".color("nevy","Claim Voucher 1: ");
@@ -290,9 +290,9 @@ echo "\n".color("nevy","Claim Voucher 1: ");
         $claim = request("/go-promotions/v1/promotions/enrollments", $token, $data);
         $message = fetch_value($claim,'"message":"','"');
         if(strpos($claim, 'Promo kamu sudah bisa dipakai')){
-          echo "\n".color("green","+] Message: ".$message);
+          echo "\n".color("green","🔓▶️Message: ".$message);
         }else{
-          echo "\n".color("red","-] Message: ".$message);
+          echo "\n".color("red","🔐▶️Message: ".$message);
         }
         
 echo "\n \n";

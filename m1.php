@@ -53,7 +53,11 @@ echo "\n";
         save("token.txt",$token);
         sleep(5);
 	echo color("green","\n================================");
-        echo color("green","\n     AUTO CLAIM VC GOFOOD");
+        echo color("blue","\n      ╔══╗─╔═╦═╦═╗─╔═╦╗       ");
+        echo color("red","\n      ║╔═╬═╣║║║║═╬═╣║║║       ");
+        echo color("blue","\n      ║╚╗║╩╣║║║╠═║╩╣║║║       ");
+        echo color("red","\n      ╚══╩═╩╩═╩╩═╩═╩╩═╝       "):
+	echo color("green","\n     AUTO CLAIM VC GOFOOD");
 	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
 	echo color("green","\n================================");	
 	echo "\n";

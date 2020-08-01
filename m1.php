@@ -8,6 +8,7 @@ $headers[] = 'X-AppVersion: 3.27.0';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -8.67117611,115.21381181';
 
+// function change(){
 echo color("green","\n=================================");
 echo color("blue","\n   ╭━━━┳━━━┳━╮╭━┳━━━┳━━━┳━╮╱╭╮ "); 
 echo color("red","\n   ┃╭━╮┃╭━━┫┃╰╯┃┃╭━╮┃╭━━┫┃╰╮┃┃ ");  
@@ -15,11 +16,10 @@ echo color("blue","\n   ┃┃╱╰┫╰━━┫╭╮╭╮┃╰━━┫�
 echo color("red","\n   ┃┃╭━┫╭━━┫┃┃┃┃┣━━╮┃╭━━┫┃╰╮┃┃ ");  
 echo color("blue","\n   ┃╰┻━┃╰━━┫┃┃┃┃┃╰━╯┃╰━━┫┃╱┃┃┃ "); 
 echo color("red","\n   ╰━━━┻━━━┻╯╰╯╰┻━━━┻━━━┻╯╱╰━╯ "); 
-echo color("yellow","\n       AUTO CLAIM VoC GOFOOD ");
+echo color("yellow","\n      AUTO CLAIM VoC GOFOOD ");
 echo color("yellow","\n  Time: ".date('[d-m-Y] [H:i:s]')."\n");	
 echo color("green","\n=================================");	
 echo "\n";
-// function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("purple","📲▶️ ");

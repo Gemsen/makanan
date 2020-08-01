@@ -9,18 +9,20 @@ $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -8.67117611,115.21381181';
 echo "\n";
 // function change(){
-echo color("green","\n================================");
-echo color("blue","\n        ╔══╗─╔═╦═╦═╗─╔═╦╗       ");
-echo color("red","\n        ║╔═╬═╣║║║║═╬═╣║║║       ");
-echo color("blue","\n        ║╚╗║╩╣║║║╠═║╩╣║║║       ");
-echo color("red","\n        ╚══╩═╩╩═╩╩═╩═╩╩═╝       ");
-echo color("yellow","\n      AUTO CLAIM VoC GOFOoD");
-echo color("yellow","\n  Time: ".date('[d-m-Y] [H:i:s]')."\n");	
-echo color("green","\n================================");	
+echo color("green","\n=================================");
+echo color("blue","\n    ╭━━━┳━━━┳━╮╭━┳━━━┳━━━┳━╮╱╭╮
+                         ┃╭━╮┃╭━━┫┃╰╯┃┃╭━╮┃╭━━┫┃╰╮┃┃
+                         ┃┃╱╰┫╰━━┫╭╮╭╮┃╰━━┫╰━━┫╭╮╰╯┃
+                         ┃┃╭━┫╭━━┫┃┃┃┃┣━━╮┃╭━━┫┃╰╮┃┃
+                         ┃╰┻━┃╰━━┫┃┃┃┃┃╰━╯┃╰━━┫┃╱┃┃┃
+                         ╰━━━┻━━━┻╯╰╯╰┻━━━┻━━━┻╯╱╰━╯
+                            AUTO CLAIM VoC GOFOOD ");
+echo color("yellow","\n Time: ".date('[d-m-Y] [H:i:s]')."\n");	
+echo color("green","\n=================================");	
 echo "\n";
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("purple","📲▶️NOMER HP ELO : ");
+        echo color("purple","📲▶️ ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -47,15 +49,15 @@ echo "\n";
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("green","📶▶️Kode verifikasi sudah di kirim")."\n";
+        echo color("green","📶▶️")."\n";
         otp:
-        echo color("yellow","💬▶️KODE OTP     : ");
+        echo color("yellow","💬▶️ ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"ff27aceb-07b2-4bf2-935f-71674a5df465"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
     
         if(strpos($verif, '"access_token"')){
-        echo color("green","✔️▶️Berhasil mendaftar\n");
+        echo color("green","✔️▶️");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+]Your access token : ".$token."\n\n");

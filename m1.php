@@ -9,6 +9,15 @@ $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
 $headers[] = 'X-Location: -8.67117611,115.21381181';
 echo "\n";
 // function change(){
+echo color("green","\n================================");
+echo color("blue","\n        ╔══╗─╔═╦═╦═╗─╔═╦╗       ");
+echo color("red","\n         ║╔═╬═╣║║║║═╬═╣║║║       ");
+echo color("blue","\n        ║╚╗║╩╣║║║╠═║╩╣║║║       ");
+echo color("red","\n         ╚══╩═╩╩═╩╩═╩═╩╩═╝       ");
+echo color("yellow","\n    AUTO CLAIM VoC GOFOoD");
+echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
+echo color("green","\n================================");	
+echo "\n";
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("purple","📲▶️NOMER HP ELO : ");
@@ -52,16 +61,8 @@ echo "\n";
         echo color("nevy","+]Your access token : ".$token."\n\n");
         save("token.txt",$token);
         sleep(5);
-	echo color("green","\n================================");
-        echo color("blue","\n      ╔══╗─╔═╦═╦═╗─╔═╦╗       ");
-        echo color("red","\n      ║╔═╬═╣║║║║═╬═╣║║║       ");
-        echo color("blue","\n      ║╚╗║╩╣║║║╠═║╩╣║║║       ");
-        echo color("red","\n      ╚══╩═╩╩═╩╩═╩═╩╩═╝       "):
-	echo color("green","\n     AUTO CLAIM VC GOFOOD");
-	echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
-	echo color("green","\n================================");	
 	echo "\n";
-        echo "\n".color("nevy","+]Klaim FOOD A");
+	echo "\n".color("nevy","+]Klaim FOOD A");
         //echo "\n".color("yellow","Please wait  ");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");

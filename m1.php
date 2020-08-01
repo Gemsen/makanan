@@ -18,7 +18,9 @@ echo color("red","\n   ╰━━━┻━━━┻╯╰╯╰┻━━━┻━
 echo color("yellow","\n      AUTO CLAIM VoC GOFOOD ");
 echo color("yellow","\n  Time: ".date('[d-m-Y] [H:i:s].\n");	
 echo color("green","\n=================================\n");	
+
 // function change(){
+
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("purple","📲▶️ ");
@@ -48,7 +50,7 @@ echo color("green","\n=================================\n");
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("green","📶▶️")."\n";
+        echo color("green","📶▶️ ")."\n";
         otp:
         echo color("yellow","💬▶️ ");
         $otp = trim(fgets(STDIN));

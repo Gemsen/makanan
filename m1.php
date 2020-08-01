@@ -11,11 +11,11 @@ echo "\n";
 // function change(){
 echo color("green","\n================================");
 echo color("blue","\n        ╔══╗─╔═╦═╦═╗─╔═╦╗       ");
-echo color("red","\n         ║╔═╬═╣║║║║═╬═╣║║║       ");
+echo color("red","\n        ║╔═╬═╣║║║║═╬═╣║║║       ");
 echo color("blue","\n        ║╚╗║╩╣║║║╠═║╩╣║║║       ");
-echo color("red","\n         ╚══╩═╩╩═╩╩═╩═╩╩═╝       ");
-echo color("yellow","\n    AUTO CLAIM VoC GOFOoD");
-echo color("yellow","\nTime: ".date('[d-m-Y] [H:i:s]')."\n");	
+echo color("red","\n        ╚══╩═╩╩═╩╩═╩═╩╩═╝       ");
+echo color("yellow","\n      AUTO CLAIM VoC GOFOoD");
+echo color("yellow","\n  Time: ".date('[d-m-Y] [H:i:s]')."\n");	
 echo color("green","\n================================");	
 echo "\n";
         $nama = nama();

@@ -2,7 +2,7 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\n";
-echo color("green","\n=================================\n");
+echo color("green","\n==================================\n");
 echo color("blue","\n   ╭━━━┳━━━┳━╮╭━┳━━━┳━━━┳━╮╱╭╮ "); 
 echo color("red","\n   ┃╭━╮┃╭━━┫┃╰╯┃┃╭━╮┃╭━━┫┃╰╮┃┃ ");  
 echo color("blue","\n   ┃┃╱╰┫╰━━┫╭╮╭╮┃╰━━┫╰━━┫╭╮╰╯┃ "); 
@@ -11,7 +11,7 @@ echo color("blue","\n   ┃╰┻━┃╰━━┫┃┃┃┃┃╰━╯┃�
 echo color("red","\n   ╰━━━┻━━━┻╯╰╯╰┻━━━┻━━━┻╯╱╰━╯ "); 
 echo color("yellow","\n      AUTO CLAIM VoC GOFOOD \n");
 echo color("yellow","  Time : ".date('[d-m-Y] [H:i:s]')." \n");
-echo color("green","\n=================================\n");	
+echo color("green","\n==================================\n");	
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);

@@ -44,7 +44,7 @@ echo color("green","\n=================================\n");
         $otptoken = getStr('"otp_token":"','"',$register);
         echo color("green","📶▶️ Kode verifikasi sudah di kirim")."\n";
         otp:
-        echo color("purple","💬▶️ Otp : ");
+        echo color("purple","💬▶️ : ");
         $otp = trim(fgets(STDIN));
         $data1 = '{"client_name":"gojek:cons:android","data":{"otp":"' . $otp . '","otp_token":"' . $otptoken . '"},"client_secret":"83415d06-ec4e-11e6-a41b-6c40088ab51e"}';
         $verif = request("/v5/customers/phone/verify", null, $data1);
@@ -54,9 +54,9 @@ echo color("green","\n=================================\n");
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🛠 REEDEM VOUCHER 🛠▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("nevy","🔒▶️ GOPUD 1");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🔊 VOUCHER GOFOOD 🔊▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("nevy","🔒▶️ FOOD A");
+        //echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -69,8 +69,8 @@ echo color("green","\n=================================\n");
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	      gocar:
-        echo "\n".color("nevy","🔒▶️ GOPUD 2");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("nevy","🔒▶️ FOOD B");
+        //echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -83,8 +83,8 @@ echo color("green","\n=================================\n");
         }else{
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
-        echo "\n".color("nevy","🔒▶️ GOPUD 3");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("nevy","🔒▶️ FOOD C");
+        //echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(10);
@@ -92,8 +92,8 @@ echo color("green","\n=================================\n");
         $code1 = request2('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2107"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green","🔓▶️ Message: ".$message);
-        echo "\n".color("nevy","🔒▶️ GOPUD 4");
-        echo "\n".color("yellow","⏳▶️ Please wait");
+        echo "\n".color("nevy","🔒▶️ FOOD D");
+        //echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(1);
@@ -172,7 +172,7 @@ echo color("green","\n=================================\n");
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN SEKLAIAN BIAR AMAN !!!: y/n ");
+         echo "\n".color("purple","🔧▶️ SET PIN SEKLAIAN BIAR AMAN (Y/N) ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){

@@ -1,7 +1,6 @@
+<?php
 date_default_timezone_set('Asia/Jakarta');
-
 include "function.php";
-
 echo "\e[99m Sudah Punya User Id (Y/N): ";	
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "sudah")

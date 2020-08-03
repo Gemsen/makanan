@@ -1,12 +1,12 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
-echo "\e[99m Sudah Punya User Id (Y/N): ";	
+echo color ("nevy","Sudah Punya User ID (Y/N)?");	
 $pilihy = trim(fgets(STDIN));
 if($pilihy == "y" || $pilihy == "sudah")
 	goto login;
 login:
-echo "\e[93===Tuliskan bacaan ****** dibawah ini===\n";
+echo color ("yellow","Tuliskan bacaan ****** dibawah ini \n");
 $pass =  ( '╄1�7 User Login : ' );
 
 $user = trim(fgets(STDIN));

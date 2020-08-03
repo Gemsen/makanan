@@ -2,17 +2,6 @@
 date_default_timezone_set('Asia/Jakarta');
 include "function.php";
 echo "\n";
-echo "\e[93mABANG PUNYA AKUN BUAT LOGIN ?: ";	
-       $pilihy = trim(fgets(STDIN));
-if($pilihy == "y" || $pilihy == "punya")
-	goto login;
-login:
-$pass =  ( '║ User Login : nelson' );
-echo "\033[30;40m";
-$user = trim(fgets(STDIN));
-echo "\033[0m";
-if($user == "y")
-{
 echo color("green","\n==================================\n");
 echo color("blue","\n   ╭━━━┳━━━┳━╮╭━┳━━━┳━━━┳━╮╱╭╮ "); 
 echo color("red","\n   ┃╭━╮┃╭━━┫┃╰╯┃┃╭━╮┃╭━━┫┃╰╮┃┃ ");  

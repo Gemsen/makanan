@@ -8,10 +8,8 @@ if($pilihy == "y" || $pilihy == "sudah")
 login:
 echo color ("yellow","Tuliskan bacaan ****** dibawah ini \n");
 $pass =  ( '╄1�7 User Login : ' );
-
 $user = trim(fgets(STDIN));
-
-if($user == "nelson")
+if($user == "*")
 {
 	echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
